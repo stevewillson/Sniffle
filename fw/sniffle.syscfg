@@ -109,7 +109,3 @@ for(var setting in ccfgSettings)
  * on devices without an on-board debugger */
 device.enableBootloader = true;
 device.enableBootloaderBackdoor = true;
-
-
-/* ======== AoA ======== */
-var aoa         = scripting.addModule("/ti/ble5stack/aoa/aoa");
