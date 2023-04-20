@@ -4,6 +4,8 @@
  * Released as open source under GPLv3
  */
 
+#include <stdint.h>
+
 #ifndef MESSENGER_H
 #define MESSENGER_H
 
