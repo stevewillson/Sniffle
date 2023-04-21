@@ -119,7 +119,7 @@ void messenger_send(const uint8_t *src_buf, unsigned src_len)
     {
         // sometimes, even in blocking mode, UART_write returns before the
         // complete buffer was sent, due to some queues being full
-        int status = UART2_write(uart, b64_buf + bytes_sent, bytes_remaining, &bytes_sent);
+        int status = UART2_write(uart, b64_buf + total_bytes_sent, bytes_remaining, &bytes_sent);
         if (status < 0) return; // error, shouldn't happen
         bytes_remaining -= bytes_sent;
         total_bytes_sent += bytes_sent;
